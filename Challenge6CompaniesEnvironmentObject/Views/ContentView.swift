@@ -14,22 +14,28 @@ struct ContentView: View {
     
     var body: some View {
         
-        TabView {
-            List(model.personList) { person in
-                PersonView(person: person)
-            }
-            .tabItem {
-                Text("Rolodex")
-                Image(systemName: "person.3")
-            }
-            .navigationTitle("Your Network")
+        VStack {
+            
+            Text("Rolodex")
+                .font(.largeTitle)
             
             TabView {
-                PreferencesView()
-            }
-            .tabItem {
-                Text("Preferences")
-                Image(systemName: "gearshape")
+                List(model.personList) { person in
+                    PersonView(person: person)
+                }
+                .tabItem {
+                    Text("Rolodex")
+                    Image(systemName: "person.3")
+                }
+                .navigationTitle("Your Network")
+                
+                TabView {
+                    PreferencesView()
+                }
+                .tabItem {
+                    Text("Preferences")
+                    Image(systemName: "gearshape")
+                }
             }
         }
         
