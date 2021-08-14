@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Challenge6CompaniesEnvironmentObjectApp: App {
+  
     var body: some Scene {
+        
         WindowGroup {
+            // Initialize the RolodexModel, which we follow around here
             ContentView()
+                .environmentObject(RolodexModel())
         }
+        
     }
 }

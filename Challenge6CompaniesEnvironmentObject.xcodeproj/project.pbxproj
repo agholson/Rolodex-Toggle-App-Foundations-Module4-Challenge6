@@ -11,6 +11,10 @@
 		4170E77626BF317800ECAB96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170E77526BF317800ECAB96 /* ContentView.swift */; };
 		4170E77826BF317C00ECAB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4170E77726BF317C00ECAB96 /* Assets.xcassets */; };
 		4170E77B26BF317C00ECAB96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4170E77A26BF317C00ECAB96 /* Preview Assets.xcassets */; };
+		4170E78626BF31EF00ECAB96 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170E78526BF31EF00ECAB96 /* Person.swift */; };
+		4170E78826BF327C00ECAB96 /* RolodexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170E78726BF327C00ECAB96 /* RolodexModel.swift */; };
+		41AA733726C5C9D600F8D524 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AA733626C5C9D500F8D524 /* PreferencesView.swift */; };
+		41E971A526C0186400A5E517 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E971A426C0186400A5E517 /* PersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		4170E77726BF317C00ECAB96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4170E77A26BF317C00ECAB96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4170E77C26BF317C00ECAB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4170E78526BF31EF00ECAB96 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4170E78726BF327C00ECAB96 /* RolodexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolodexModel.swift; sourceTree = "<group>"; };
+		41AA733626C5C9D500F8D524 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		41E971A426C0186400A5E517 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				4170E77326BF317800ECAB96 /* Challenge6CompaniesEnvironmentObjectApp.swift */,
-				4170E77526BF317800ECAB96 /* ContentView.swift */,
+				4170E78426BF31D400ECAB96 /* ViewModels */,
+				4170E78326BF31CD00ECAB96 /* Models */,
+				4170E78226BF31C600ECAB96 /* Views */,
 				4170E77726BF317C00ECAB96 /* Assets.xcassets */,
 				4170E77C26BF317C00ECAB96 /* Info.plist */,
 				4170E77926BF317C00ECAB96 /* Preview Content */,
@@ -67,6 +77,32 @@
 				4170E77A26BF317C00ECAB96 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4170E78226BF31C600ECAB96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4170E77526BF317800ECAB96 /* ContentView.swift */,
+				41E971A426C0186400A5E517 /* PersonView.swift */,
+				41AA733626C5C9D500F8D524 /* PreferencesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4170E78326BF31CD00ECAB96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4170E78526BF31EF00ECAB96 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4170E78426BF31D400ECAB96 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4170E78726BF327C00ECAB96 /* RolodexModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E971A526C0186400A5E517 /* PersonView.swift in Sources */,
+				41AA733726C5C9D600F8D524 /* PreferencesView.swift in Sources */,
+				4170E78826BF327C00ECAB96 /* RolodexModel.swift in Sources */,
+				4170E78626BF31EF00ECAB96 /* Person.swift in Sources */,
 				4170E77626BF317800ECAB96 /* ContentView.swift in Sources */,
 				4170E77426BF317800ECAB96 /* Challenge6CompaniesEnvironmentObjectApp.swift in Sources */,
 			);
